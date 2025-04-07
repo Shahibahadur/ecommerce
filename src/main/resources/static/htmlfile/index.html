@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Login/Signup</title>
+    <link rel="stylesheet" href="/cssfile/index.css?v=1.0.1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Login Form -->
+            <form id="loginForm" class="user-form">
+                <h2>Welcome Back</h2>
+                <div class="input-group">
+                    <input type="text" id="loginEmail" placeholder="Email" required>
+                    <i class='bx bx-envelope'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <i class='bx bx-lock-alt'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Remember me
+                    </label>
+                    <a href="#" id="forgotPassword">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="toggle-form">Don't have an account? <a href="#" id="showRegister">Sign Up</a></p>
+            </form>
+
+            <!-- Register Form -->
+            <form id="registerForm" class="user-form" style="display: none;">
+                <h2>Create Account</h2>
+                <div class="name-fields">
+                    <div class="input-group">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <i class='bx bx-user'></i>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                        <i class='bx bx-user'></i>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="registerEmail" placeholder="Email" required>
+                    <i class='bx bx-envelope'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+                    <i class='bx bx-phone'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="dob" placeholder="Date of Birth" required>
+                    <i class='bx bx-calendar'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="registerPassword" placeholder="Password" required>
+                    <i class='bx bx-lock-alt'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <i class='bx bx-lock-alt'></i>
+                    <span class="error-message"></span>
+                </div>
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="acceptTerms" required> I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="toggle-form">Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
